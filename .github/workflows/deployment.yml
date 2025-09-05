@@ -1,5 +1,5 @@
 name: Deploy Project
-on: push
+on: [push, workflow_dispatch] # workflow_dispatch allows manual triggering of the workflow from the Actions tab in GitHub
 jobs:
   test:
     runs-on: ubuntu-latest # node.js is already installed - github shows what each runner has installed on it
